@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #393958;
+}
+
+.Inhalt {
+    color: white;
+}
+
+.wrapper {
+    flex: 1;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul.dropdown {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul.dropdown li {
+    position: relative;
+    margin: 0 10px;
+}
+
+nav ul.dropdown li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul.dropdown li ul.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    box-shadow: 0 2px 10px black;
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 150px;
+}
+
+nav ul.dropdown li ul.submenu li {
+    margin: 0;
+}
+
+nav ul.dropdown li ul.submenu li a {
+    padding: 10px;
+    white-space: nowrap;
+    transition: background-color 0.1s, color 0.1s;
+}
+
+nav ul.dropdown li:hover ul.submenu {
+    display: block;
+}
+
+nav ul.dropdown li a:hover,
+nav ul.dropdown li ul.submenu li a:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    flex: 1;
+}
+
+.Inhalt {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+}
+
+.links .link-item {
+    width: 25%;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+
+.links .link-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.links .link-item:hover img {
+    transform: scale(1.1);
+}
+
+.links .link-item a {
+    display: block;
+    margin-top: 5px;
+    text-decoration: none;
+    color: white; 
+    transition: color 0.3s ease;
+}
+
+.links .link-item:hover a {
+    color: lightgray;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    width: 100%;
+}
+
+footer a {
+    color: inherit; 
+}

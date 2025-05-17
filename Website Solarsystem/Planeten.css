@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #393958; 
+}
+
+header {
+    background-color: black; 
+    color: white; 
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul.dropdown {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul.dropdown li {
+    position: relative;
+    margin: 0 10px;
+}
+
+nav ul.dropdown li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul.dropdown li ul.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    box-shadow: 0 2px 10px black;
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 150px;
+}
+
+nav ul.dropdown li ul.submenu li {
+    margin: 0;
+}
+
+nav ul.dropdown li ul.submenu li a {
+    padding: 10px;
+    white-space: nowrap;
+    transition: background-color 0.1s, color 0.1s;
+}
+
+nav ul.dropdown li:hover ul.submenu {
+    display: block;
+}
+
+nav ul.dropdown li a:hover,
+nav ul.dropdown li ul.submenu li a:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+p, ul {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+main {
+    padding: 20px;
+    background-color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: inherit; 
+}
+
+.Planet_Bild {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px; 
+}
